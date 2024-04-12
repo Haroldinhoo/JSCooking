@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav bar</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-</head>
-
-<body>
-    <nav class="navbar">
-        <span class="toggle-nav" id="toggle-nav">
-            <i class="material-icons">menu</i>
-        </span>
-        <!-- <div class=""> -->
-        <a href="#" class="logo"><img src="logo.jpg" alt="">
-            <p>Company Name</p>
-        </a>
-        <!-- </div> -->
-        <ul class="main-nav" id="main-nav">
-            <li><a href="#" class="nav-links">Home</a></li>
-            <li><a href="#" class="nav-links">News</a></li>
-            <li><a href="#" class="nav-links">Conatct</a></li>
-            <li><a href="#" class="nav-links">About</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" type="text/css" target="_blank" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/Logo64x64.png" alt="logo" />
+        <h1>LOGO</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </nav>
-    <script>
-        let mainNav = document.getElementById('main-nav');
-        let toggleNav = document.getElementById('toggle-nav');
-        toggleNav.addEventListener('click', function () {
-            mainNav.classList.toggle('active')
-        });
-    </script>
-</body>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
 
+    <script src="script.js"></script>
+  </body>
 </html>
